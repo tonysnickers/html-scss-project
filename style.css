@@ -45,4 +45,10 @@ header nav .right button {
 header nav .right button:hover {
   color: inherit;
   background-color: var(--violet);
+}
+
+@media screen and (max-width: 640px) {
+  .right a {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
