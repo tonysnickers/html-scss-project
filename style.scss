@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400&display=swap");
 :root {
   --violet: #d33bfd;
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffff;
+  width: 100%;
 }
 
 header {
@@ -44,21 +45,102 @@ header {
         border: 1px solid var(--violet);
         border-radius: 5px;
         cursor: pointer;
-        transition: color 0.5s, background-color 0.5s ;
-        &:hover{
+        transition: color 0.5s, background-color 0.5s;
+        &:hover {
           color: inherit;
           background-color: var(--violet);
-
         }
       }
     }
   }
 }
 
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+
+  // margin-top: 5%;
+
+
+
+    .product-presentation {
+      width: 100%;
+      // flex-shrink: 3;
+
+      h1 {
+        margin: 0;
+        font-size: 3.5vw;
+        width: 80%;
+      }
+      p {
+        font-weight: 300;
+        color: #e9e9e9;
+      }
+      button {
+        margin-top: 20px;
+        padding: 15px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: var(--violet);
+        color: #fff;
+        transition: background-color 0.5s, color 0.5s;
+
+        &:hover {
+          background-color: inherit;
+          border: 1px solid var(--violet);
+          color: var(--violet);
+        }
+      }
+
+      .small-images {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .small {
+          margin: 10px;
+          background-color: #33314d;
+          margin: 0 15px 15px 0;
+          border-radius: 20px;
+          transition: filter 0.5s;
+
+          img {
+            width: 120px;
+          }
+          &:hover {
+            filter: brightness(50%);
+          }
+
+        }
+      }
+    }
+  }
+
+  .first{
+
+    .image-presentation {
+      width: 100%;
+      img {
+        width: 105%;
+      }
+  }
+
+}
+
 @media screen and (max-width: 640px) {
   .right {
-    a{
+    a {
       display: none;
     }
   }
 }
+
+// ///////////////////////////////// NAV ////////////////////////////////////////
+
+// https://resource.logitech.com/content/dam/gaming/en/products/g733/gallery/g733-lilac-gallery-1.png
